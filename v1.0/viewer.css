@@ -163,12 +163,10 @@
     /* Internet Explorer 10+ */
   }
 
-  .ezv-xr-button-container {
-    display: flex;
+.ezv-xr-button-container {
     position: absolute;
-    left: 50%;
-    top: 15px;
-    transform: translate(-50%, 0);
+    left: 5px;
+    bottom: -5px;
  }
 
 .ezv-xr-button {
