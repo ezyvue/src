@@ -166,7 +166,7 @@
 .ezv-xr-button-container {
     position: absolute;
     left: 5px;
-    bottom: 0;
+    bottom: 5px;
     display: flex;
  }
 
