@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
 }
 
-.ezv-play-button {
+img.ezv-play-button {
     width: 55px;
     cursor: pointer;
 }
@@ -49,6 +49,15 @@
     border: 2px solid #444;
     border-radius: 4px;
     background-color: #333;
+}
+
+.ezv-main-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
 }
 
 .ezv-white-outlined-text {
@@ -228,4 +237,368 @@
   right: 15px;
   opacity: 0.5;
   width: 40px;
+}
+
+.ezv-configurator-panel {
+  display: flex;
+  flex-direction: column;
+  color: #222;
+  font-size: small;
+  height: 100%;
+  align-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.ezv-configurator-title {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: black;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ezv-configurator-variant-title {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.ezv-configurator-part-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+
+.ezv-configurator-variant-icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.ezv-configurator-variant-icons-container > div {
+    margin: 4px 8px;
+}
+
+.ezv-configurator-variant-icons-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.ezv-configurator-parts-view-compact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.ezv-configurator-variant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ezv-configurator-parts-view-expanded {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ezv-configurator-back-button {
+  width: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.ezv-configurator-variant {
+  font-weight: normal;
+  border: 2px solid #888;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.ezv-configurator-variant-icon {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+}
+
+.ezv-configurator-variant-name {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  user-select: none;
+  text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444;
+}
+
+.part-editor-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.color-variant-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.variant-material-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.variant-material-row {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+.ezv-configurator-panel {
+  display: flex;
+  flex-direction: column;
+  color: #222;
+  font-size: small;
+  height: 100%;
+  align-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.ezv-configurator-title {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: black;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ezv-configurator-variant-title {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.ezv-configurator-part-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+
+.ezv-configurator-variant-icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.ezv-configurator-variant-icons-container > div {
+    margin: 4px 8px;
+}
+
+.ezv-configurator-variant-icons-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.ezv-configurator-parts-view-compact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.ezv-configurator-variant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ezv-configurator-parts-view-expanded {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ezv-configurator-back-button {
+  width: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.ezv-configurator-variant {
+  font-weight: normal;
+  border: 2px solid #888;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.ezv-configurator-variant-icon {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+}
+
+.ezv-configurator-variant-name {
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  user-select: none;
+  text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444;
+}
+
+.ezv-configurator-position-right {
+  padding-top: 20px;
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #888;
+}
+
+.ezv-configurator-position-left {
+  padding-top: 20px;
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #888;
+}
+
+.ezv-configurator-position-bottom {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+  border-top: 1px solid #888;
+}
+
+.ezv-configurator-position-offscreen {
+  position: absolute;
+  left: -1000px;
+}
+
+.ezv-configurator-panel-row {
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  width: 90%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.ezv-configurator-panel-row > div {
+  margin: auto;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.ezv-configurator-panel-row::-webkit-scrollbar {
+  display: none !important;
+}
+
+.ezv-configurator-panel-row {
+  -ms-overflow-style: none !important;
+  scrollbar-width: 0 !important;
+}
+
+.ezv-configurator-position-bottom {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+  border-top: 1px solid #888;
+}
+
+.ezv-configurator-panel {
+  display: flex;
+  flex-direction: column;
+  color: #222;
+  font-size: small;
+  height: 100%;
+  align-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.ezv-configurator-panel-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  white-space: pre-line;
+}
+
+.ezv-part-icon {
+  width: auto;
+  height: auto;
+  margin-top: 5px;
+  display: block; 
+  margin: auto;
+}
+
+.ezv-sliding-select {
+  padding: 10px;
+  display: flex;
+  max-width: 350px;
+  align-items: center;
+}
+
+.ezv-sliding-select-button {
+  width: 12px;
+  height: 25px;
+  font-size: 1.4rem;
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.ezv-sliding-select-content {
+  display: flex;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space:nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ezv-canvas-container {
+  overflow: hidden;
+  width: 100%; 
+  display: block;
+  position: relative;
+  flex: 1;
 }
