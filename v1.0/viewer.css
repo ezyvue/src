@@ -179,7 +179,7 @@ img.ezv-play-button {
     display: flex;
  }
 
-.ezv-xr-button {
+img.ezv-xr-button {
     z-index: 10000;
     width: 44px;
     height: 44px;
@@ -508,8 +508,6 @@ img.ezv-play-button {
 }
 
 .ezv-configurator-panel-row {
-  margin-top: 5px;
-  margin-bottom: 5px; 
   width: 90%;
   white-space: nowrap;
   overflow-x: scroll;
@@ -567,7 +565,7 @@ img.ezv-play-button {
 }
 
 .ezv-sliding-select {
-  padding: 10px;
+  padding: 4px;
   display: flex;
   max-width: 350px;
   align-items: center;
