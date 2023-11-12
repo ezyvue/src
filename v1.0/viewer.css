@@ -122,7 +122,7 @@ img.ezv-play-button {
   
   .ezv-menu-bar-button {
     border-radius: 4px;
-    border: 1px solid #999;
+    border: none;
     background-color: rgba(255, 255, 255, 0.9);
     margin: 1px;
     padding: 2px;
@@ -134,7 +134,7 @@ img.ezv-play-button {
       padding: 1px;
       display: block;
       margin: auto;
-      opacity: 75%;
+      opacity: 90%;
   }
 
   .ezv-info-window {
